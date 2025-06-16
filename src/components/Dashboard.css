@@ -1,0 +1,173 @@
+/* Dashboard.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.navbar-center a {
+  margin: 0 1rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-center a:hover {
+  color: #ffffff;
+}
+
+.agent-profile {
+  text-align: right;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Main Section */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex: 1;
+  background-color: #ffffff;
+}
+
+
+/* Orders */
+.orders-section {
+  flex: 2;
+}
+
+.orders-section h2 {
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.order-card {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  color: #1f2937;
+}
+
+.order-card .label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.status-dropdown {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  font-weight: 500;
+  color: #1e293b;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.status-dropdown:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.order-card button {
+  margin-top: 0.7rem;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.order-card button:hover {
+  background-color: #1d4ed8;
+}
+
+.image-section {
+  flex: 1;
+  margin-left: 2rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+.image-section img {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1e293b;
+  color: #cbd5e1;
+}
+
+.tracking-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tracking-panel {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  color: #1f2937;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.tracking-panel .label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #1f2937;
+}
